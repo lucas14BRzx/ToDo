@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://img.freepik.com/vetores-gratis/formas-geometricas-gradientes-em-fundo-escuro_23-2148434188.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #07cdff;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    color: #01d9ff;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #01d9ff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #00c3ff;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #2e2e2e;
+    color: rgb(0, 140, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #00c3ff;
+    color: white;
+}
+
+.tarefa-container {
+    border: 2px solid #00a2ff;
+    border-radius: 5px;
+    background-color: #585858; 
+    width: 550px; 
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    color: #0084ff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #eee; 
+    cursor: pointer; 
+    transition: color 0.3s, background-color 0.3s;
+    color: #ffffff; /* Cor padrão */
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+li.checked {
+    color: #ffffff; /* Muda a cor para branco ao clicar */
+    text-decoration: line-through;
+    background-color: rgba(0, 140, 255, 0.3); /* Cor de fundo ao ser marcado */
+}
+
+.close {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}
